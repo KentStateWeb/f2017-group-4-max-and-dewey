@@ -9,15 +9,45 @@
   </head>
   <body>
       <header>
-        <h1 class="page-title">Pet's First: Home Page</h1>
         <div class="menu">
-          <ul>
+          <!-- corners -->
+          <div class="tl"></div>
+          <div class="tr"></div>
+          <div class="bl"></div>
+          <div class="br"></div>
+
+          <!-- hole -->
+          <div class="hole-left"></div>
+
+          <ul class="menu-list">
             <li>Home</li>
             <li>Services</li>
-            <li class="logo">LOGO</li>
+            <li class="logo">
+              <svg width="100px" height="100px" viewBox="120 100 70 70">
+                  <image x="0" y="0" width="200" height="200"
+                      xlink:href="https://rwdkent.com/class/groups/assets/group11/pets-first-color.svg" clip-path="url(#myClip)">
+                  </image>
+              </svg>
+            </li>
             <li>About Us</li>
             <li>Contact Us</li>
           </ul>
+        </div>
+        <div class="mobile-menu">
+          <div class="mobile-logo logo">
+            <svg width="100px" height="100px" viewBox="120 100 70 70">
+                <image x="0" y="0" width="200" height="200"
+                    xlink:href="https://rwdkent.com/class/groups/assets/group11/pets-first-color.svg" clip-path="url(#myClip)">
+                </image>
+            </svg>
+          </div>
+          <div class="sidebar">
+            <div class="open-overlay">
+              <span class="bar-top"></span>
+              <span class="bar-middle"></span>
+              <span class="bar-bottom"></span>
+            </div>
+          </div>
         </div>
       </header>
       <main>
@@ -130,6 +160,50 @@
       </div>
     </footer>
        <!-- The page content goes here -->
-      <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
+      <link href="assets/style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+      $(".open-overlay").click(function() {
+        $(".open-overlay").css("pointer-events", "none");
+        var overlay_navigation = $(".overlay-navigation"), top_bar = $(".bar-top"), middle_bar = $(".bar-middle"), bottom_bar = $(".bar-bottom");
+
+        overlay_navigation.toggleClass("overlay-active");
+        if (overlay_navigation.hasClass("overlay-active")) {
+          top_bar.removeClass("animate-out-top-bar").addClass("animate-top-bar");
+          middle_bar.removeClass("animate-out-middle-bar").addClass("animate-middle-bar");
+          bottom_bar.removeClass("animate-out-bottom-bar").addClass("animate-bottom-bar");
+          overlay_navigation.removeClass("overlay-slide-up").addClass("overlay-slide-down");
+          $('.menu').hide();
+          overlay_navigation.velocity('transition.slideLeftIn', {
+                     duration: 300,
+                     delay: 0,
+                     begin: function() {
+                       $('.open-overlay').css('pointer-events', 'auto');
+                     }
+                   });
+        } else {
+          $(".open-overlay").css("pointer-events", "none");
+          top_bar.removeClass("animate-top-bar").addClass("animate-out-top-bar");
+          middle_bar.removeClass("animate-middle-bar").addClass("animate-out-middle-bar");
+          bottom_bar.removeClass("animate-bottom-bar").addClass("animate-out-bottom-bar");
+          overlay_navigation.removeClass("overlay-slide-down").addClass("overlay-slide-up");
+          $('.menu').show();
+          overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up')
+           $('.menu ul li').velocity('transition.perspectiveRightOut', {
+             stagger: 150,
+             delay: 0,
+             complete: function() {
+               overlay_navigation.velocity('transition.fadeOut', {
+                 delay: 0,
+                 duration: 300,
+                 complete: function() {
+                   $('.open-overlay').css('pointer-events', 'auto');
+                 }
+               });
+             }
+           });
+        }
+      });
+      </script>
   </body>
 </html>
