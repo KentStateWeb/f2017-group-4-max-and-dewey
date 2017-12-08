@@ -39,7 +39,7 @@ blue: #334051;
   left: 50%;
   margin-left: -400px;
   width: 800px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .menu .tl, .menu .tr,
@@ -96,6 +96,17 @@ blue: #334051;
   vertical-align: middle;
 }
 
+.menu-list a, .menu-list a:visited {
+  color: #334051;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.menu-list a:hover {
+  color: #EAEAEA;
+}
+
 .hole-left {
   height: 20px;
   width: 20px;
@@ -121,8 +132,10 @@ blue: #334051;
 
 @media screen and (max-width: 600px)
 {
+
   .menu {
     display: none;
+    z-index: 0;
   }
 
   .mobile-logo {
@@ -146,8 +159,8 @@ blue: #334051;
 
   .open-overlay {
     position: absolute;
-    right: 5rem;
-    top: 3.2rem;
+    left: 3rem;
+    top: 8.2rem;
     z-index: 100;
     width: 34px;
     display: block;
@@ -157,7 +170,7 @@ blue: #334051;
   .open-overlay span {
     display: block;
     height: 1px;
-    background-color: #fff;
+    background-color: #29363B;
     cursor: pointer;
     margin-top: 8px;
   }
@@ -194,7 +207,7 @@ blue: #334051;
 
   @keyframes animate-top-bar {
     0% {
-      background-color: #fff;
+      background-color: #29363B;
     }
     50% {
       -webkit-transform: translateY(9px);
@@ -203,7 +216,7 @@ blue: #334051;
     80% {
       -webkit-transform: translateY(5px);
       transform: translateY(5px);
-      background-color: #fff;
+      background-color: #29363B;
     }
     100% {
       -webkit-transform: translateY(0);
@@ -214,7 +227,7 @@ blue: #334051;
 
   @keyframes animate-bottom-bar {
     0% {
-      background-color: #fff;
+      background-color: #29363B;
     }
     50% {
       -webkit-transform: translateY(-9px);
@@ -223,7 +236,7 @@ blue: #334051;
     80% {
       -webkit-transform: translateY(-5px);
       transform: translateY(-5px);
-      background-color: #fff;
+      background-color: #29363B;
     }
     100% {
       -webkit-transform: translateY(0);
@@ -234,10 +247,10 @@ blue: #334051;
 
   @keyframes animate-middle-bar {
     0% {
-      background-color: #fff;
+      background-color: #29363B;
     }
     80% {
-      background-color: #fff;
+      background-color: #29363B;
     }
     100% {
       background-color: #29363B;
@@ -246,7 +259,7 @@ blue: #334051;
 
   @keyframes animate-out-top-bar {
     0% {
-      background-color: #29363B
+      background-color: #29363B;
     }
     50% {
       -webkit-transform: translateY(9px);
@@ -255,12 +268,12 @@ blue: #334051;
     80% {
       -webkit-transform: translateY(5px);
       transform: translateY(5px);
-      background-color: #29363B
+      background-color: #29363B;
     }
     100% {
       -webkit-transform: translateY(0);
       transform: translateY(0);
-      background-color: #FFF;
+      background-color: #29363B;
     }
   }
 
@@ -270,7 +283,7 @@ blue: #334051;
     }
     50% {
       -webkit-transform: translateY(-9px);
-      transform: translateY(-9px)
+      transform: translateY(-9px);
     }
     80% {
       -webkit-transform: translateY(-5px);
@@ -280,26 +293,82 @@ blue: #334051;
     100% {
       -webkit-transform: translateY(0);
       transform: translateY(0);
-      background-color: #FFF;
+      background-color: #29363B;
     }
   }
 
   @keyframes animate-out-middle-bar {
     0% {
-      background-color: #29363B
+      background-color: #29363B;
     }
     80% {
       background-color: #29363B;
     }
     100% {
-      background-color: #fff;
+      background-color: #29363B;
     }
+  }
+
+  .footer-right {
+    float: left !important;
   }
 
 }
 
-/* extra */
+@media screen and (max-width: 800px) {
+  .home-office {
+    display: none;
+  }
+}
 
+/* footer */
+footer {
+  /* color */
+  background-color: #334051;
+  color: #fff;
+
+  /* position and size */
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.footer-right {
+  float: right;
+  margin-right: 5%;
+}
+
+.social-media i {
+  padding: 0.25em;
+}
+
+.additional-links {
+  padding-right: 10em;
+  float: right;
+}
+
+.additional-links ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.home-office {
+  float: left;
+}
+
+.home-office img {
+  width: 400px;
+  bottom: 0px;
+  position: absolute;
+}
+
+.home-office .arrow {
+  width: 60px;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* extra */
 main {
   margin-top: 250px;
 }

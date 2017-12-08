@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home | Pet's First!</title>
     <meta name="description" content="Page Description Goes Here">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
   </head>
   <body>
       <header>
@@ -20,8 +21,8 @@
           <div class="hole-left"></div>
 
           <ul class="menu-list">
-            <li>Home</li>
-            <li>Services</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
             <li class="logo">
               <svg width="100px" height="100px" viewBox="120 100 70 70">
                   <image x="0" y="0" width="200" height="200"
@@ -29,8 +30,8 @@
                   </image>
               </svg>
             </li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="mobile-menu">
@@ -140,15 +141,9 @@
       </section>
     </main>
     <footer>
-      <div class="footer-left">
-        <div class="footer-logo">
-          LOGO
-        </div>
-        <div class="social-media">
-          <img src="" alt="Twitter" />
-          <img src="" alt="Instagram" />
-          <img src="" alt="Facebook" />
-        </div>
+      <div class="home-office">
+        <img src="assets/img/outside.png" alt="home-office" />
+        <img src="assets/img/arrow.png" class="arrow" alt="arrow" />
       </div>
       <div class="additional-links">
         <h2 class="al-header">Addtional Links</h2>
@@ -157,6 +152,20 @@
           <li>Customer Reviews</li>
           <li>Awards & Recognition</li>
         </ul>
+        <div class="social-media">
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-logo">
+          <svg width="200px" height="200px" viewBox="10 100 80 90">
+              <image x="0" y="0" width="200" height="200"
+                  xlink:href="https://rwdkent.com/class/groups/assets/group11/pets-first-color.svg" clip-path="url(#myClip)">
+              </image>
+          </svg>
+        </div>
       </div>
     </footer>
        <!-- The page content goes here -->
@@ -164,8 +173,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script>
       $(".open-overlay").click(function() {
-        $(".open-overlay").css("pointer-events", "none");
-        var overlay_navigation = $(".overlay-navigation"), top_bar = $(".bar-top"), middle_bar = $(".bar-middle"), bottom_bar = $(".bar-bottom");
+        var overlay_navigation = $(".menu"), top_bar = $(".bar-top"), middle_bar = $(".bar-middle"), bottom_bar = $(".bar-bottom");
 
         overlay_navigation.toggleClass("overlay-active");
         if (overlay_navigation.hasClass("overlay-active")) {
@@ -173,35 +181,13 @@
           middle_bar.removeClass("animate-out-middle-bar").addClass("animate-middle-bar");
           bottom_bar.removeClass("animate-out-bottom-bar").addClass("animate-bottom-bar");
           overlay_navigation.removeClass("overlay-slide-up").addClass("overlay-slide-down");
-          $('.menu').hide();
-          overlay_navigation.velocity('transition.slideLeftIn', {
-                     duration: 300,
-                     delay: 0,
-                     begin: function() {
-                       $('.open-overlay').css('pointer-events', 'auto');
-                     }
-                   });
+          $('.menu').show();
         } else {
-          $(".open-overlay").css("pointer-events", "none");
           top_bar.removeClass("animate-top-bar").addClass("animate-out-top-bar");
           middle_bar.removeClass("animate-middle-bar").addClass("animate-out-middle-bar");
           bottom_bar.removeClass("animate-bottom-bar").addClass("animate-out-bottom-bar");
           overlay_navigation.removeClass("overlay-slide-down").addClass("overlay-slide-up");
-          $('.menu').show();
-          overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up')
-           $('.menu ul li').velocity('transition.perspectiveRightOut', {
-             stagger: 150,
-             delay: 0,
-             complete: function() {
-               overlay_navigation.velocity('transition.fadeOut', {
-                 delay: 0,
-                 duration: 300,
-                 complete: function() {
-                   $('.open-overlay').css('pointer-events', 'auto');
-                 }
-               });
-             }
-           });
+          $('.menu').hide();
         }
       });
       </script>
