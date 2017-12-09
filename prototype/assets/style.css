@@ -6,15 +6,45 @@
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 
 /** globals **/
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #EAEAEA;
-  max-width: 1000px;
-  padding: 1em;
+  margin: 0;
+  padding-bottom: 6rem;
   font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.85em;
 }
 
 /*
@@ -38,6 +68,7 @@ blue: #334051;
   position: absolute;
   left: 50%;
   margin-left: -400px;
+  margin-top: -180px;
   width: 800px;
   z-index: 1;
 }
@@ -130,12 +161,91 @@ blue: #334051;
   display: none;
 }
 
+/* footer */
+footer {
+  /* color */
+  background-color: #334051;
+  color: #fff;
+
+  /* position and size */
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.footer-right {
+  float: right;
+  margin-right: 5%;
+}
+
+.social-media i {
+  padding: 0.25em;
+}
+
+.additional-links {
+  padding-right: 10em;
+  float: right;
+}
+
+.additional-links ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.home-office {
+  float: left;
+}
+
+.home-office img {
+  width: 400px;
+  bottom: 0px;
+  position: absolute;
+}
+
+.home-office .arrow {
+  width: 60px;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* index.html */
+main {
+  /* color */
+  background-color: #fff;
+  text-align: center;
+
+  /* align & margin */
+  padding: 1.5em;
+  margin: 200px auto 100px auto;
+  width: 90%;
+  height: 100%;
+
+  /* border */
+  border-radius: 0.5em;
+}
+
+.margin-center {
+  margin-bottom: 100px;
+  margin-right: 1em;
+}
+
+.hours {
+  float: left;
+  width: 30%;
+  height: 500px;
+}
+
+.blog {
+  height: 500px;
+}
+
 @media screen and (max-width: 600px)
 {
 
   .menu {
     display: none;
     z-index: 0;
+    margin-top: 0;
   }
 
   .mobile-logo {
@@ -319,56 +429,4 @@ blue: #334051;
   .home-office {
     display: none;
   }
-}
-
-/* footer */
-footer {
-  /* color */
-  background-color: #334051;
-  color: #fff;
-
-  /* position and size */
-  position: absolute;
-  left: 0;
-  width: 100%;
-}
-
-.footer-right {
-  float: right;
-  margin-right: 5%;
-}
-
-.social-media i {
-  padding: 0.25em;
-}
-
-.additional-links {
-  padding-right: 10em;
-  float: right;
-}
-
-.additional-links ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-.home-office {
-  float: left;
-}
-
-.home-office img {
-  width: 400px;
-  bottom: 0px;
-  position: absolute;
-}
-
-.home-office .arrow {
-  width: 60px;
-  margin-top: 20px;
-  position: relative;
-}
-
-/* extra */
-main {
-  margin-top: 250px;
 }
