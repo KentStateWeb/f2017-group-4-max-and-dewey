@@ -168,8 +168,6 @@ footer {
   color: #fff;
 
   /* position and size */
-  position: absolute;
-  left: 0;
   width: 100%;
 }
 
@@ -210,33 +208,71 @@ footer {
 
 /* index.html */
 main {
-  /* color */
-  background-color: #fff;
-  text-align: center;
-
-  /* align & margin */
-  padding: 1.5em;
-  margin: 200px auto 100px auto;
-  width: 90%;
-  height: 100%;
-
-  /* border */
-  border-radius: 0.5em;
+  width: 100%;
+  height 500px;
+  margin-top: 250px;
+  position: relative;
 }
 
 .margin-center {
-  margin-bottom: 100px;
-  margin-right: 1em;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.individual {
+  float: left;
+  width: 30%;
+}
+
+.stacked {
+  float: right;
+  width: 65%;
 }
 
 .hours {
-  float: left;
-  width: 30%;
-  height: 500px;
+  background-color: #fff;
+  border-radius: 0.5em;
+
+  /* margin & position */
+  text-align: center;
+  padding: 0.5em;
 }
 
 .blog {
-  height: 500px;
+  background-color: #fff;
+  border-radius: 0.5em;
+  padding: 0.5em;
+
+  /* margin & position */
+}
+
+.pets-seen {
+  background-color: #fff;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+.blog-site {
+  text-align: left;
+}
+
+.blog-post {
+  font-size: 0.8em;
+  padding: 0.5em;
+
+  /* border */
+}
+
+.blog-header {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.blog-date {
+  text-transform: lowercase;
+  font-size: 0.7em;
+  color: #334051;
 }
 
 @media screen and (max-width: 600px)
