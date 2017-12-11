@@ -172,12 +172,16 @@ blue: #334051;
 
   /* margin & position */
 
-  text-align: left;
+  text-align: center;
   padding: 2em;
 }
 
 .hours th {
   text-align: center;
+}
+
+.hours table {
+  margin: 0.5em auto 0.5em auto;
 }
 
 .blog {
@@ -220,8 +224,26 @@ blue: #334051;
   width: 100%;
 }
 
+/* about.html */
+.avatar {
+  width: 20em;
+  margin-bottom: 0.5em;
+}
+
+.about-new-user {
+  margin-top: 10em;
+}
+
 @media screen and (max-width: 600px)
 {
+  .avatar {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+
+  .about-new-user {
+    margin-top: auto;
+  }
 
   .menu {
     display: none;
@@ -229,8 +251,12 @@ blue: #334051;
     margin-top: 0;
   }
 
-  .siderbar {
+  .sidebar {
     display: block;
+  }
+
+  .menu .logo {
+    display: none;
   }
 
   .mobile-logo {
@@ -245,9 +271,7 @@ blue: #334051;
   }
 
   .open-overlay {
-    position: absolute;
-    left: 3rem;
-    top: 8.2rem;
+    margin-top: 40px;
     z-index: 100;
     width: 34px;
     display: block;
@@ -397,7 +421,6 @@ blue: #334051;
   }
 
   .main {
-    background-color: #fff;
     margin: 50px auto auto auto;
   }
 
