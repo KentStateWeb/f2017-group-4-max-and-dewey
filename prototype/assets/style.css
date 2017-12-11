@@ -107,25 +107,6 @@ blue: #334051;
   color: #fff;
 }
 
-.hole-left {
-  height: 20px;
-  width: 20px;
-  background-color: #EAEAEA;
-  float: left;
-  margin-top: 68px;
-  margin-left: 15px;
-  border-radius: 100%;
-}
-
-.hole-right {
-  height: 20px;
-  width: 20px;
-  background-color: #EAEAEA;
-  float: right;
-  margin-top: 68px;
-  border-radius: 100%;
-}
-
 .sidebar {
   display: none;
 }
