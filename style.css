@@ -1,0 +1,400 @@
+/* fonts */
+@font-face {
+    font-family: 'octin_sportsregular';
+    src: url('octin_sports_rg-webfont.woff2') format('woff2'),
+         url('octin_sports_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Heebo');
+
+
+/** globals **/
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #EAEAEA;
+  margin: 0;
+  padding-bottom: 6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.85em;
+}
+
+/*
+
+gray: #EAEAEA;
+orange: #f8a076;
+blue: #334051;
+
+*/
+
+/* menu */
+.banner {
+  width: 100%;
+}
+
+.banner-style {
+  margin: auto auto 15px auto;
+}
+.menu {
+
+  /* fonts */
+  font-family: 'octin_sportsregular';
+
+  /* align and margin */
+  margin: 25px 0 25px 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+.mobile-logo {
+  display: none;
+}
+
+.logo {
+  overflow: hidden;
+}
+
+.menu-list {
+  list-style-type: none;
+}
+
+.menu-list li {
+  text-transform: uppercase;
+
+  /* spacing */
+  margin: 0.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu-list a, .menu-list a:visited {
+  color: #334051;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.menu-list a:hover {
+  color: #fff;
+}
+
+.sidebar {
+  display: none;
+}
+
+/* footer */
+.footer {
+  background-color: #334051 !important;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+}
+
+
+.home-office {
+  float: left;
+  height: 215px;
+}
+
+.home-office img {
+  width: 400px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.home-office .arrow {
+  width: 60px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.ad {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 600;
+}
+
+/* index.html */
+.main {
+    margin: auto auto 50px auto;
+}
+
+.new-user {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.patient-portal .btn {
+  margin: 0.5em;
+  background: none;
+  color: #334051;
+  border: solid 0.1em #f8a076;
+}
+
+.patient-portal .btn:hover {
+  background-color: #f8a076;
+  color: #fff;
+}
+
+.hours {
+  border-radius: 1em;
+
+  /* margin & position */
+
+  text-align: left;
+  padding: 2em;
+}
+
+.blog {
+  border-radius: 0.5em;
+  padding: 0.5em;
+
+  /* margin & position */
+}
+
+.pets-seen {
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+.blog-site {
+  text-align: left;
+}
+
+.blog-post {
+  font-size: 0.8em;
+  padding: 0.5em;
+
+  /* border */
+}
+
+.blog-header {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.blog-date {
+  text-transform: lowercase;
+  font-size: 0.7em;
+  color: #334051;
+}
+
+.image {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px)
+{
+
+  .menu {
+    display: none;
+    z-index: 0;
+    margin-top: 0;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+
+  /* menu */
+
+  .menu-list li {
+    display: block;
+    height: 2.5em;
+  }
+
+  .open-overlay {
+    position: absolute;
+    left: 3rem;
+    top: 8.2rem;
+    z-index: 100;
+    width: 34px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .open-overlay span {
+    display: block;
+    height: 1px;
+    background-color: #29363B;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+
+  .animate-top-bar {
+    -webkit-animation: animate-top-bar .6s linear 1 both;
+    animation: animate-top-bar .6s linear 1 both
+  }
+
+  .animate-bottom-bar {
+    -webkit-animation: animate-bottom-bar .6s linear 1 both;
+    animation: animate-bottom-bar .6s linear 1 both
+  }
+
+  .animate-middle-bar {
+    -webkit-animation: animate-middle-bar .6s linear 1 both;
+    animation: animate-middle-bar .6s linear 1 both
+  }
+
+  .animate-out-top-bar {
+    -webkit-animation: animate-out-top-bar .6s linear 1 both;
+    animation: animate-out-top-bar .6s linear 1 both
+  }
+
+  .animate-out-bottom-bar {
+    -webkit-animation: animate-out-bottom-bar .6s linear 1 both;
+    animation: animate-out-bottom-bar .6s linear 1 both
+  }
+
+  .animate-out-middle-bar {
+    -webkit-animation: animate-out-middle-bar .6s linear 1 both;
+    animation: animate-out-middle-bar .6s linear 1 both
+  }
+
+  @keyframes animate-top-bar {
+    0% {
+      background-color: #29363B;
+    }
+    50% {
+      -webkit-transform: translateY(9px);
+      transform: translateY(9px)
+    }
+    80% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+      background-color: #29363B;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      background-color: #29363B;
+    }
+  }
+
+  @keyframes animate-bottom-bar {
+    0% {
+      background-color: #29363B;
+    }
+    50% {
+      -webkit-transform: translateY(-9px);
+      transform: translateY(-9px)
+    }
+    80% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+      background-color: #29363B;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      background-color: #29363B;
+    }
+  }
+
+  @keyframes animate-middle-bar {
+    0% {
+      background-color: #29363B;
+    }
+    80% {
+      background-color: #29363B;
+    }
+    100% {
+      background-color: #29363B;
+    }
+  }
+
+  @keyframes animate-out-top-bar {
+    0% {
+      background-color: #29363B;
+    }
+    50% {
+      -webkit-transform: translateY(9px);
+      transform: translateY(9px)
+    }
+    80% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+      background-color: #29363B;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      background-color: #29363B;
+    }
+  }
+
+  @keyframes animate-out-bottom-bar {
+    0% {
+      background-color: #29363B;
+    }
+    50% {
+      -webkit-transform: translateY(-9px);
+      transform: translateY(-9px);
+    }
+    80% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+      background-color: #29363B;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      background-color: #29363B;
+    }
+  }
+
+  @keyframes animate-out-middle-bar {
+    0% {
+      background-color: #29363B;
+    }
+    80% {
+      background-color: #29363B;
+    }
+    100% {
+      background-color: #29363B;
+    }
+  }
+
+  .main {
+    background-color: #fff;
+    margin: 50px auto auto auto;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .home-office {
+    display: none;
+  }
+}
