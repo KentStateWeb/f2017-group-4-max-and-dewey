@@ -247,14 +247,6 @@ blue: #334051;
     height: 2.5em;
   }
 
-  .menu-list .logo {
-    display: none;
-  }
-
-  .sidebar {
-    display: block;
-  }
-
   .open-overlay {
     position: absolute;
     left: 3rem;
