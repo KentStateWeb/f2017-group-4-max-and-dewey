@@ -6,7 +6,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Heebo');
 
 
 /** globals **/
@@ -56,52 +56,24 @@ blue: #334051;
 */
 
 /* menu */
+.banner {
+  width: 100%;
+}
+
+.banner-style {
+  margin: auto auto 15px auto;
+}
 .menu {
-  /* colors */
-  background-color: #FFFFFF;
 
   /* fonts */
   font-family: 'octin_sportsregular';
 
   /* align and margin */
-  margin: 50px 0 50px 0;
+  margin: 25px 0 25px 0;
   text-align: center;
-  width: 800px;
+  width: 100%;
   z-index: 1;
 }
-
-.menu .tl, .menu .tr,
-.menu .bl, .menu .br {
-    width: 0;
-    height: 0;
-    position: absolute;
-}
-
-.menu .tl {
-    top: 15px;
-    left: 15px;
-    border-top: 60px solid #EAEAEA;
-    border-right: 60px solid transparent;
-}
-.menu .tr {
-    top: 15px;
-    right: 15px;
-    border-top: 60px solid #EAEAEA;
-    border-left: 60px solid transparent;
-}
-.menu .bl {
-    bottom: 15px;
-    left: 15px;
-    border-bottom: 60px solid #EAEAEA;
-    border-right: 60px solid transparent;
-}
-.menu .br {
-    bottom: 15px;
-    right: 15px;
-    border-bottom: 60px solid #EAEAEA;
-    border-left: 60px solid transparent;
-}
-
 .mobile-logo {
   display: none;
 }
@@ -163,6 +135,7 @@ blue: #334051;
   background-color: #334051 !important;
   color: #fff;
   width: 100%;
+  position: absolute;
 }
 
 
@@ -184,13 +157,34 @@ blue: #334051;
   position: relative;
 }
 
+.ad {
+  font-family: 'Heebo', sans-serif;
+}
+
 /* index.html */
 .main {
     margin: auto auto 50px auto;
 }
 
+.new-user {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.patient-portal .btn {
+  margin: 0.5em;
+  background: none;
+  color: #334051;
+  border: solid 0.1em #f8a076;
+}
+
+.patient-portal .btn:hover {
+  background-color: #f8a076;
+  color: #fff;
+}
+
 .hours {
-  background-color: #fff;
   border-radius: 0.5em;
 
   /* margin & position */
@@ -199,7 +193,6 @@ blue: #334051;
 }
 
 .blog {
-  background-color: #fff;
   border-radius: 0.5em;
   padding: 0.5em;
 
@@ -207,7 +200,6 @@ blue: #334051;
 }
 
 .pets-seen {
-  background-color: #fff;
   border-radius: 0.5em;
   padding: 0.5em;
   margin-top: 0.5em;
@@ -415,8 +407,9 @@ blue: #334051;
     }
   }
 
-  .footer-right {
-    float: left !important;
+  .main {
+    background-color: #fff;
+    margin: 50px auto auto auto;
   }
 
 }

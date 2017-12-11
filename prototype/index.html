@@ -7,20 +7,19 @@
     <title>Home | Pet's First!</title>
     <meta name="description" content="Page Description Goes Here">
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col"></div>
-        <div class="col">
           <div class="menu">
-            <!-- corners -->
-            <div class="tl"></div>
-            <div class="tr"></div>
-            <div class="bl"></div>
-            <div class="br"></div>
 
             <ul class="menu-list">
               <li><a href="index.html">Home</a></li>
@@ -52,13 +51,21 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col"></div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 banner-style"><img src="assets/img/banner.jpg" class="banner" alt="banner, vet"/></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-md-8 new-user">Are you a new or returning patient? Handle all your patient needs at the patient portal. Visit the portal by clicking the button below. <div class="patient-portal"><button type="button" class="btn btn-lg">Patient Portal</button></div></div>
+        <div class="col-sm-2"></div>
       </div>
     </div>
     <div class="container main">
       <div class="row">
-        <div class="col">
+        <div class="col-md-4">
           <section class="hours">
           <h3>Contact Info</h3>
             <p>
@@ -99,9 +106,9 @@
             </table>
 
             <p><em>We will be closed on Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Christmas Day and New Year’s Day.</em></p>
-      </section>
+          </section>
         </div>
-        <div class="col">
+        <div class="col-md-8">
           <section class="blog">
             <div class="blog-site">
               <div class="blog-post">
@@ -135,35 +142,37 @@
               </div>
             </div>
           </section>
-          <section class="pets-seen">
-            <p class="types"><strong>Types of Pets Seen</strong>
-            Because a large number of veterinarians who practice here, we can care for many types of pets:
-            <ul>
-              <li>Dogs</li>
-              <li>Cats</li>
-              <li>Rabbits*</li>
-              <li>Pocket Pets*</li>
-              <li>Reptiles*</li>
-              <li>Birds*</li>
-            </ul>
-
-            <em>*Select veterinarians only. Call us for more information.</em>
-            </p>
-          </section>
         </div>
+        <div class="col-md-4">
+            <section class="pets-seen">
+              <p class="types"><strong>Types of Pets Seen</strong>
+              Because a large number of veterinarians who practice here, we can care for many types of pets:
+              <ul>
+                <li>Dogs</li>
+                <li>Cats</li>
+                <li>Rabbits*</li>
+                <li>Pocket Pets*</li>
+                <li>Reptiles*</li>
+                <li>Birds*</li>
+              </ul>
+
+              <em>*Select veterinarians only. Call us for more information.</em>
+              </p>
+            </section>
+          </div>
       </div>
     </div>
-    <div class="container-fluid position-absolute footer">
+    <div class="container-fluid footer">
       <div class="row align-items-end">
-        <div class="col">
+        <div class="col-md-4">
           <div class="home-office">
           <img src="assets/img/outside.png" alt="home-office" />
           <img src="assets/img/arrow.png" class="arrow fixed-top" alt="arrow" />
+          </div>
         </div>
-        </div>
-        <div class="col">
+        <div class="col-md-4">
           <div class="additional-links">
-            <h2 class="al-header">Addtional Links</h2>
+            <h2 class="al-header ad">Addtional Links</h2>
             <ul>
               <li>Schedule an appointment</li>
               <li>Customer Reviews</li>
@@ -176,7 +185,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-4">
           <div class="footer-right">
             <div class="footer-logo">
               <svg width="200px" height="200px" viewBox="10 100 80 90">
