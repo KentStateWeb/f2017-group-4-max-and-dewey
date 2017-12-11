@@ -229,6 +229,10 @@ blue: #334051;
     margin-top: 0;
   }
 
+  .siderbar {
+    display: block;
+  }
+
   .mobile-logo {
     display: block;
   }
