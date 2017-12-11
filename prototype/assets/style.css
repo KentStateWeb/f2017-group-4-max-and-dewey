@@ -104,7 +104,7 @@ blue: #334051;
 }
 
 .menu-list a:hover {
-  color: #EAEAEA;
+  color: #fff;
 }
 
 .hole-left {
@@ -159,6 +159,7 @@ blue: #334051;
 
 .ad {
   font-family: 'Heebo', sans-serif;
+  font-weight: 600;
 }
 
 /* index.html */
@@ -225,6 +226,10 @@ blue: #334051;
   text-transform: lowercase;
   font-size: 0.7em;
   color: #334051;
+}
+
+.image {
+  width: 100%;
 }
 
 @media screen and (max-width: 600px)
