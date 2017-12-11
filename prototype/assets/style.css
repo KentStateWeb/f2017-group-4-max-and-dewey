@@ -167,11 +167,12 @@ blue: #334051;
 }
 
 .hours {
-  border-radius: 0.5em;
+  border-radius: 1em;
 
   /* margin & position */
-  text-align: center;
-  padding: 0.5em;
+
+  text-align: left;
+  padding: 2em;
 }
 
 .blog {
