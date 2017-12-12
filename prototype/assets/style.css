@@ -228,7 +228,10 @@ blue: #334051;
 }
 
 .image {
-  width: 100%;
+  width: 80%;
+  padding: 5em;
+  border-top: solid #334051 0.2em;
+  border-bottom: solid #334051 0.2em;
 }
 
 /* about.html */
