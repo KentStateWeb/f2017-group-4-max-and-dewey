@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Pet's First!</title>
+    <meta name="description" content="Page Description Goes Here">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h1>Menu</h1>
+          <div class="mobile-menu">
+            <div class="container">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="mobile-logo logo">
+                  <svg width="100px" height="100px" viewBox="120 100 70 70">
+                      <image x="0" y="0" width="200" height="200"
+                          xlink:href="https://rwdkent.com/class/groups/assets/group11/pets-first-color.svg" clip-path="url(#myClip)">
+                      </image>
+                  </svg>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="sidebar center-block">
+              <div class="open-overlay">
+                <span class="bar-top"></span>
+                <span class="bar-middle"></span>
+                <span class="bar-bottom"></span>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="menu">
+
+            <ul class="menu-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li class="logo">
+                <svg width="100px" height="100px" viewBox="120 100 70 70">
+                    <image x="0" y="0" width="200" height="200"
+                        xlink:href="https://rwdkent.com/class/groups/assets/group11/pets-first-color.svg" clip-path="url(#myClip)">
+                    </image>
+                </svg>
+              </li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h1>Footer</h1>
+          <div class="container-fluid footer">
+            <div class="row align-items-end">
+              <div class="col-md-4">
+                <div class="home-office">
+                <img src="assets/img/outside.png" alt="home-office" />
+                <img src="assets/img/arrow.png" class="arrow fixed-top" alt="arrow" />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="additional-links">
+                  <h2 class="al-header ad">Addtional Links</h2>
+                  <ul>
+                    <li>Schedule an appointment</li>
+                    <li>Customer Reviews</li>
+                    <li>Awards & Recognition</li>
+                  </ul>
+                  <div class="social-media">
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="footer-right">
+                  <div class="footer-logo">
+                    <svg width="200px" height="200px" viewBox="10 100 80 90">
+                        <image x="0" y="0" width="200" height="200"
+                            xlink:href="https://rwdkent.com/class/groups/assets/group11/pets-first-color.svg" clip-path="url(#myClip)">
+                        </image>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    <!-- The page content goes here -->
+   <link href="assets/style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+   <script>
+   $(".open-overlay").click(function() {
+     var overlay_navigation = $(".menu"), top_bar = $(".bar-top"), middle_bar = $(".bar-middle"), bottom_bar = $(".bar-bottom");
+
+     overlay_navigation.toggleClass("overlay-active");
+     if (overlay_navigation.hasClass("overlay-active")) {
+       top_bar.removeClass("animate-out-top-bar").addClass("animate-top-bar");
+       middle_bar.removeClass("animate-out-middle-bar").addClass("animate-middle-bar");
+       bottom_bar.removeClass("animate-out-bottom-bar").addClass("animate-bottom-bar");
+       overlay_navigation.removeClass("overlay-slide-up").addClass("overlay-slide-down");
+       $('.menu').show();
+     } else {
+       top_bar.removeClass("animate-top-bar").addClass("animate-out-top-bar");
+       middle_bar.removeClass("animate-middle-bar").addClass("animate-out-middle-bar");
+       bottom_bar.removeClass("animate-bottom-bar").addClass("animate-out-bottom-bar");
+       overlay_navigation.removeClass("overlay-slide-down").addClass("overlay-slide-up");
+       $('.menu').hide();
+     }
+   });
+   </script>
+</body>
+</html>

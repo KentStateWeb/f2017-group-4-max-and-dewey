@@ -250,6 +250,10 @@ blue: #334051;
     position:absolute;
 }
 
+.social-media {
+  float: right;
+}
+
 @media screen and (max-width: 600px)
 {
   .avatar {
@@ -442,7 +446,7 @@ blue: #334051;
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .home-office {
     display: none;
   }
