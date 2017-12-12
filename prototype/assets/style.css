@@ -167,6 +167,13 @@ blue: #334051;
   color: #fff;
 }
 
+.btn-active {
+  margin: 0.5em !important;
+  background-color: #f8a076 !important;
+  color: #fff !important;
+  border: solid 0.1em #f8a076 !important;
+}
+
 .hours {
   border-radius: 1em;
 
