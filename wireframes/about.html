@@ -139,28 +139,6 @@
         </div>
       </div>
        <!-- The page content goes here -->
-       <link href="assets/style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-       <script>
-       $(".open-overlay").click(function() {
-         var overlay_navigation = $(".menu"), top_bar = $(".bar-top"), middle_bar = $(".bar-middle"), bottom_bar = $(".bar-bottom");
-
-         overlay_navigation.toggleClass("overlay-active");
-         if (overlay_navigation.hasClass("overlay-active")) {
-           top_bar.removeClass("animate-out-top-bar").addClass("animate-top-bar");
-           middle_bar.removeClass("animate-out-middle-bar").addClass("animate-middle-bar");
-           bottom_bar.removeClass("animate-out-bottom-bar").addClass("animate-bottom-bar");
-           overlay_navigation.removeClass("overlay-slide-up").addClass("overlay-slide-down");
-           $('.menu').show();
-         } else {
-           top_bar.removeClass("animate-top-bar").addClass("animate-out-top-bar");
-           middle_bar.removeClass("animate-middle-bar").addClass("animate-out-middle-bar");
-           bottom_bar.removeClass("animate-bottom-bar").addClass("animate-out-bottom-bar");
-           overlay_navigation.removeClass("overlay-slide-down").addClass("overlay-slide-up");
-           $('.menu').hide();
-         }
-       });
-       </script>
+       <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
   </body></p>
 </html>
